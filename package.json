@@ -1,0 +1,48 @@
+{
+    "name": "base-vue-phone-input",
+    "version": "0.1.3",
+    "type": "module",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "main": "./dist/base-vue-phone-input.umd.cjs",
+    "module": "./dist/base-vue-phone-input.js",
+    "exports": {
+        ".": {
+            "import": "./dist/base-vue-phone-input.js",
+            "require": "./dist/base-vue-phone-input.umd.cjs"
+        }
+    },
+    "typings": "./dist/index.d.ts",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "types": "vue-tsc ",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "libphonenumber-js": "^1.11.7",
+        "vue": "^3.4.37"
+    },
+    "devDependencies": {
+        "@types/node": "^22.4.0",
+        "@vitejs/plugin-vue": "^5.1.2",
+        "typescript": "^5.5.4",
+        "vite": "^5.4.1",
+        "vite-plugin-dts": "^1.4.1",
+        "vue-tsc": "^2.0.29"
+    },
+    "keywords": [
+        "vue",
+        "phone",
+        "phone-input",
+        "slots",
+        "customizable",
+        "tel",
+        "input",
+        "component",
+        "vue3",
+        "telephone"
+    ]
+}
