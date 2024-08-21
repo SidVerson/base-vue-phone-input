@@ -456,7 +456,7 @@ watch(
             :input-value="selectedCountry"
             :update-input-value="countryChanged"
             :countries="countryOptions"></slot>
-            <div v-if="!slots.selector">
+        <div v-if="!slots.selector">
             <select
                 class="base-select"
                 name="selector"
