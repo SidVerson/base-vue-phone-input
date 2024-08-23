@@ -10,6 +10,10 @@ using npm
   npm install basic-vue-phone-input
 ```
 
+## Examples
+
+[Demo with shadcn/vue](https://shadcn-vue-phone-input.vercel.app/)
+
 ## Usage
 
 ```javascript
