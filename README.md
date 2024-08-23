@@ -92,9 +92,6 @@ But this input is meant to be customized
 ```javascript
 <PhoneInput
   :translations="{
-    countrySelector: {
-      searchPlaceholder: 'Search a country',
-    },
     phoneInput: {
       placeholder: 'Phone number',
       example: 'Example:',

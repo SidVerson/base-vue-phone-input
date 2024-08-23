@@ -112,6 +112,11 @@ const { isCountryAvailable, getPhoneNumberResults, getAsYouTypeFormat } =
 const { getPhoneNumberExamplesFile, getPhoneNumberExample } =
     useLibphonenumber()
 
+const locales = computed(() => ({
+    ...defaultLocales,
+    ...props.translations,
+}))
+
 const examples = ref<Examples>()
 
 async function loadExamples() {
@@ -337,9 +342,7 @@ function getCountryPhoneNumberExample(
     selectedCountry?: CountryCode
 ) {
     const example = getPhoneNumberExample(examples, selectedCountry)
-    return example
-        ? `${defaultLocales.phoneInput.example} ${example}`
-        : undefined
+    return example ? `${locales.phoneInput.example} ${example}` : undefined
 }
 
 const inputLabelOrPlaceholder = computed(() => {
@@ -347,7 +350,7 @@ const inputLabelOrPlaceholder = computed(() => {
         return props.placeholder
     }
 
-    const defaultPlaceholder = defaultLocales.phoneInput.placeholder
+    const defaultPlaceholder = locales.phoneInput.placeholder
     if (!examples.value) {
         return defaultPlaceholder
     } else {
