@@ -7,7 +7,7 @@ Basic phone input deeply customizable with slots
 using npm
 
 ```bash
-  npm install basic-vue-phone-input
+  npm install base-vue-phone-input
 ```
 
 ## Examples
